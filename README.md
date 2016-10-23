@@ -13,6 +13,7 @@ usage: ./notifyirc nick channel
 
 Where `nick` is the nick of the bot, and `channel` is the channel containing the people to be messaged.
 
-## Why does this exist?
+## Bugs
 
-I have an IRC client on my phone. It stays connected to an IRC server all day and auto-joins a specific channel. Sometimes when my phone reconnects (for example switching from WiFi to cellular data) the IRC client will reconnect but with a different name. Hence the channel approach. I use this bot for notifying me of log entries or of the completion of long tasks.
+* Doesn't handle disconnects.
+* Hangs when there's nobody in the channel (channel does not exist).
